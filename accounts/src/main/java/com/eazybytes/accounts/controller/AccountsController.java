@@ -47,24 +47,6 @@ public class AccountsController {
     @Autowired
     private AccountsContactInfoDto accountsContactInfoDto;
 
-//    @Operation( // used for docs but not required
-//            summary = "Create Account REST API",
-//            description = "REST API to create new Customer &  Account inside EazyBank"
-//    )
-//    @ApiResponses({ // used for docs
-//            @ApiResponse(
-//                    responseCode = "201",
-//                    description = "HTTP Status CREATED"
-//            ),
-//            @ApiResponse(
-//                    responseCode = "500",
-//                    description = "HTTP Status Internal Server Error",
-//                    content = @Content(
-//                            schema = @Schema(implementation = ErrorResponseDto.class)
-//                    )
-//            )
-//    }
-//    )
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@Valid @RequestBody CustomerDto customerDto) {
         iAccountsService.createAccount(customerDto);
