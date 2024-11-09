@@ -48,7 +48,7 @@ public class AccountsController {
     private AccountsContactInfoDto accountsContactInfoDto;
 
     @Operation( // used for docs but not required
-            summary = "Create Account REST API",
+            summary = "Create Account REST API's",
             description = "REST API to create new Customer &  Account inside EazyBank"
     )
     @ApiResponses({ // used for docs
