@@ -36,7 +36,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
 public class CardsController {
-// cards test git command
     private ICardsService iCardsService;
 
     public CardsController(ICardsService iCardsService) {
