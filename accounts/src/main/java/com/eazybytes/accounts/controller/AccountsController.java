@@ -56,8 +56,8 @@ public class AccountsController {
     }
 
     @Operation(
-            summary = "Account Details REST API",
-            description = "REST API to fetch Customer &  Account details based on a mobile number"
+//            summary = "Fetch Account Details REST API",
+//            description = "API to fetch Customer &  Account details based on a mobile number"
     )
     @ApiResponses({
             @ApiResponse(
