@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
 public class AccountsController {
-    // change for git
+    // change for git commands
     private final IAccountsService iAccountsService;
 
     public AccountsController(IAccountsService iAccountsService) {
